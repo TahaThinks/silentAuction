@@ -4,9 +4,9 @@ import art
 bidders = {}
 
 def bid ():
-    bidder_name = input(print("What is your name?: "))
-    bidder_bid = int(input(print("What is your bid?: $ ")))
-    bidders = {bidder_name : bidder_bid}
+    bidder_name = input("What is your name?: ")
+    bidder_bid = int(input("What is your bid?: $ "))
+    bidders[bidder_name] = bidder_bid
 
 
 print(art.logo)
