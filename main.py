@@ -8,6 +8,12 @@ def bid ():
     bidder_bid = int(input("What is your bid?: $ "))
     bidders[bidder_name] = bidder_bid
 
+def winner():
+    # print(bidders)
+    winner_name = max(bidders, key=bidders.get)
+    winner_bid = bidders[winner_name]
+    print(f"{winner_name} is the winner bidding at {winner_bid}")
 
 print(art.logo)
 print("Welcome to the secret aution program")
+
