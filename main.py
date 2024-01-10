@@ -17,3 +17,13 @@ def winner():
 print(art.logo)
 print("Welcome to the secret aution program")
 
+isBidActive = True
+
+while isBidActive:
+    bid()
+    next = input("Are there any other bidders? Type 'yes' or 'no': ")
+    if next == 'yes':
+        os.system('cls')
+    else:
+      isBidActive = False
+      winner()
